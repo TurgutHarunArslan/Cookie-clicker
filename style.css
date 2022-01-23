@@ -4,6 +4,7 @@ width: 80%;
 }
 .sectionright{
 float: right;
+margin-right: 50px;
 width: 20%;
 }
 .scorecon{
