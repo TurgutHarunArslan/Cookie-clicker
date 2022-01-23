@@ -1,0 +1,13 @@
+.sectionleft{
+float: left;
+width: 80%;
+}
+.sectionright{
+float: right;
+width: 20%;
+}
+.scorecon{
+font-weight: bold;
+font-size: 24px;
+margin-left: 150px;
+}
