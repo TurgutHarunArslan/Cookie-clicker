@@ -1,6 +1,7 @@
 .sectionleft{
 float: left;
-width: 80%;
+width: 75%;
+margin-left: 25px;
 }
 .sectionright{
 float: right;
@@ -36,4 +37,6 @@ transition: all .2s ease-in-out;
 #amount {
 font-size: 60px;
 }
-
+.shop{
+top: 100%;
+}

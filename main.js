@@ -74,9 +74,9 @@ document.getElementById("cursors").innerHTML = cursors;
 
 
             function resetGame() {
-                if (confirm("are you sure you want to reset your game")) {
+                if (confirm("Oyundaki tum ilerlemeni silmek istiyormusun?")) {
                   var gameSave = {}
-                  localStorage.removeItem(gameSave());
+                  localStorage.clear();
                   location.reload();
                 }
               }
