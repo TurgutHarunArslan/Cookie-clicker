@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicking game</title>
+    <title>Kurabiye tıklayıcıları</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,25 +12,48 @@
 
    <div class="sectionleft">
        <div class="scorecon">
-       <center>
-    <p>Score:<span id="score">0</span></p>
+        <center>
+    <p>Cookie:<span id="score">0</span></p>
 
     <img src="resimler/PerfectCookie.webp" onclick="skorekle(1)"/>
 </div>
 
-<button onclick="savegame();">Save game</button>
-<button onclick=";">Load game</button>
-</center>
+
+<center>
 </div>
 
+<button onclick="savegame();">Oyunu kadet </button>
+<button onclick="loadgame();">Oyunu yükle </button>
+<button onclick="resetGame();">Oyunu resetle</button>
 
 
 
 
 
-    <div class="sectionright">
-    <button onclick="buycursor()">Oto tıklayıcı [<span id="cursorcost">15</span>] -- <span id="cursors">0</span></button>
-    <button onclick="buygrandma()">Büyuk Anne [<span id="grandmacost">45</span>] -- <span id="grandmas">0</span></button>
+<div class="sectionright">
+    <table class="shopButton" onclick="buycursor()">
+        <tr>
+        <td id="image"> <img src="resimler/cursor.png" id="resim"></td>
+        <td id="nameAndCost">
+            <p>Fare</p>
+            <p>  <span id="cursorcost"> 15</span>    Kurabiye  </p>
+        </td>
+        <td id="amount"><span id="cursors"></span></td>
+        </tr>
+
+        <table class="shopButton" onclick="buygrandma()">
+            <tr>
+            <td id="image"> <img src="resimler/grandma.jpg" id="resim"></td>
+            <td id="nameAndCost">
+                <p>Büyük Anne</p>
+                <p>  <span id="grandmacost"> 100</span>    Kurabiye  </p>
+            </td>
+            <td id="amount"><span id="grandmas"></span></td>
+            </tr>
+
+
+
+
 </div>
 </body>
 <script src="main.js"></script>

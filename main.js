@@ -1,7 +1,7 @@
 var score = 0;
 var cursorcost = 15;
 var cursors = 0;
-var grandmacost = 45
+var grandmacost = 100;
 var grandmas = 0;
 
 function skorekle(amount){
@@ -19,7 +19,7 @@ document.getElementById("score").innerHTML = score;
 document.getElementById("cursorcost").innerHTML = cursorcost;
 document.getElementById("cursors").innerHTML = cursors;
 } else{
-    alert("Yeterli Skorun Yok");
+    alert("Yeterli Kurabiyen Yok");
     }
 }
 
@@ -44,7 +44,7 @@ document.getElementById("cursors").innerHTML = cursors;
             score = score + cursors;
             score = score + grandmas * 3;
             document.getElementById("score").innerHTML = score;
-            }, 1000);
+            }, 2000);
 
             function loadgame() {
             var savedgame = JSON.parse(localStorage.getItem("gamesave"))
@@ -68,6 +68,20 @@ document.getElementById("cursors").innerHTML = cursors;
             };
             localStorage.setItem("gamesave",JSON.stringify(gamesave))
             }
+ 
+
+
+
+
+            function resetGame() {
+                if (confirm("are you sure you want to reset your game")) {
+                  var gameSave = {}
+                  localStorage.removeItem(gameSave());
+                  location.reload();
+                }
+              }
+
+
             window.onload = function() {
             loadgame();
             document.getElementById("score").innerHTML = score;
@@ -77,14 +91,20 @@ document.getElementById("cursors").innerHTML = cursors;
             document.getElementById("grandmas").innerHTML = grandmas;
             }
 
-            window.onbeforeunload = function() {
-                savegame();
-            }
 
-        
             setInterval (function() {
                 savegame();
-            },30000);
+            },15000);
+
+
+
+
+
+
+
+
+        
+
         
 
 

@@ -11,3 +11,27 @@ font-weight: bold;
 font-size: 24px;
 margin-left: 150px;
 }
+.scorecon img:hover{
+transform:scale(1.10);
+}
+.scorecon img:active{
+    transform:scale(0.99);
+    }
+#resim{
+width: 64px;
+height: 64px;
+}
+.shopButton {
+background-color: antiquewhite;
+transition: all .2s ease-in-out;
+border-radius: 10px;
+width: 100%;
+margin: 10px 0px 10px 0px;
+}
+.shopButton :hover{
+background-color: rgba(250, 235, 215, 0.144);
+transition: all .2s ease-in-out;
+}
+#amount {
+font-size: 60px;
+}
