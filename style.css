@@ -4,6 +4,7 @@ width: 80%;
 }
 .sectionright{
 float: right;
+margin-right: 50px;
 width: 20%;
 }
 .scorecon{
@@ -35,3 +36,4 @@ transition: all .2s ease-in-out;
 #amount {
 font-size: 60px;
 }
+
