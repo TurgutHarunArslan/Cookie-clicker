@@ -7,6 +7,8 @@ var grandmas = 0;
 function skorekle(amount){
 score = score + amount;
 document.getElementById("score").innerHTML = score;
+playAudio();
+
 }
 
 function buycursor(){
@@ -30,7 +32,7 @@ document.getElementById("cursors").innerHTML = cursors;
         if(score >= grandmacost) {
         score = score - grandmacost;
         grandmas = grandmas + 1;
-        grandmacost = Math.round(grandmacost * 1.30);
+        grandmacost = Math.round(grandmacost * 1.30)
         
         document.getElementById("score").innerHTML = score;
         document.getElementById("grandmacost").innerHTML = grandmacost;
@@ -105,7 +107,9 @@ document.getElementById("cursors").innerHTML = cursors;
 
         
 
-        
+  //Audio
+  var ac = document.getElementById("audio"); 
 
-
-
+  function playAudio() { 
+    ac.play(); 
+  } 
