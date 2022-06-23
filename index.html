@@ -15,7 +15,7 @@
    <div class="sectionleft">
 
 
-    <button onclick="savegame();">Oyunu kadet </button>
+    <button onclick="savegame();">Oyunu kaydet </button>
     <button onclick="loadgame();">Oyunu yükle </button>
     <button onclick="resetGame();">Oyunu resetle</button>
     
@@ -24,7 +24,7 @@
         <center>
     <p>Kurabiye:<span id="score">0</span></p>
 
-    <img src="resimler/PerfectCookie.webp" onclick="skorekle(1)"/>
+    <img src="resimler/PerfectCookie.webp" onclick="skorekle()"/>
 </div>
 
 
@@ -37,6 +37,7 @@
 
 <div class="sectionright">
     <div class="shop">
+        
     <table class="shopButton" onclick="buycursor()">
         <tr>
         <td id="image"> <img src="resimler/cursor.png" id="resim"></td>
@@ -55,6 +56,17 @@
                 <p>  <span id="grandmacost"> 100</span>    Kurabiye  </p>
             </td>
             <td id="amount"><span id="grandmas"></span></td>
+            </tr>
+        </div>
+
+        <table class="shopButton" onclick="buymult()">
+            <tr>
+            <td id="image"> <img src="resimler/e.jpg" id="resim"></td>
+            <td id="nameAndCost">
+                <p>Çogaltıcı</p>
+                <p>  <span id="multcost"> 10</span>    Kurabiye  </p>
+            </td>
+            <td id="amount"><span id="multi"></span></td>
             </tr>
         </div>
 
